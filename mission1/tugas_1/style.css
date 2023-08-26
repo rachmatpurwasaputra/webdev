@@ -1,0 +1,116 @@
+
+body {
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Grid container */
+
+.grid-container {
+    display: grid;
+    /* divide evenly per sixth region part */
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-auto-flow: column;  /* flow each content within grid as columnar */
+    height: calc(100vh - 20px); /* 20px subtraction from scroll bar */
+}
+
+
+/* Text and viewing part */
+
+.center-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.white-text {
+    color: white;
+}
+
+.box-black-border {
+    border: 1px solid black;
+}
+
+
+/* Box sizes variety */
+
+.box-12 {
+    grid-row: span 2;
+}
+
+.box-13 {
+    grid-row: span 3;
+}
+
+.box-21 {
+    grid-column: span 2;
+}    
+
+.box-22 {
+    grid-column: span 2;
+    grid-row: span 2;
+}    
+
+.box-23 {
+    grid-column: span 2;
+    grid-row: span 3;
+}    
+
+.box-41 {
+    grid-column: span 4;
+}    
+
+
+/* For coloring purposes */
+
+.dark-blue {
+    background-color: #0070c0;
+}
+
+.yellow {
+    background-color: #ffff00;
+}
+
+.red {
+    background-color: #ff0000;
+}
+
+.green {
+    background-color: #00b050;
+}
+
+.black {
+    background-color: #000000;
+}
+
+.brown {
+    background-color: #806000;
+}
+
+.purple {
+    background-color: #7030a0;
+}
+
+.orange {
+    background-color: #ffc000;
+}
+
+.white {
+    background-color: #ffffff;
+}
+
+.pink {
+    background-color: #ff99ff;
+}
+
+.light-blue {
+    background-color: #00b0f0;
+}
+
+.grey {
+    background-color: #a6a6a6;
+}
+
+/* CSS for box styling ends here */
