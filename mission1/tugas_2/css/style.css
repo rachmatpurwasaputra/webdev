@@ -156,7 +156,7 @@ h4.full-name {
 
 p.self-description {
     font-size: 15px;
-    font-weight: 300;
+    /* font-weight: 300; */
     line-height: 1.5;
     color: #8b8b8b;
 }
@@ -177,7 +177,7 @@ p.self-description {
 
 .subscribe > p{
     font-size: 16px;
-    font-weight: 400;
+    /* font-weight: 400; */
     line-height: 1.5;
     margin-left: 15px;
     color: #8b8b8b;
@@ -317,7 +317,7 @@ li a {
     .subscribe > p{
         width: auto;
         font-size: 16px;
-        font-weight: 400;
+        /* font-weight: 400; */
         line-height: 1.5;
         margin: 20px 8%;
         color: #8b8b8b;
@@ -422,7 +422,7 @@ li a {
     .landing > p {
         text-align: center;
         font-size: 1rem;
-        font-weight: 500;
+        /* font-weight: 500; */
         line-height: 1.5;
         padding: 0 30px;
         color: #8b8b8b;
@@ -490,7 +490,7 @@ li a {
     .subscribe > p{
         width: auto;
         font-size: 16px;
-        font-weight: 400;
+        /* font-weight: 400; */
         line-height: 1.5;
         margin: 20px 8%;
         color: #8b8b8b;
