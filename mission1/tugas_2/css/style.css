@@ -28,7 +28,9 @@ h5 {
 }
 
 .top-content {
-    background-color: #f3f4f6;
+    /* background-color: #f3f4f6; */
+    background:linear-gradient(0deg, rgba(243, 244, 246, 0.85), rgba(243, 244, 246, 0.9)), url(../img/landing-bg.jpg);
+    background-size: cover;
 }
 
 .landing, .instructors, .subscribe-container, .bottom-content {
@@ -50,7 +52,7 @@ h5 {
     font-weight: 500;
     line-height: 1.5;
     padding-bottom: 20px;
-    color: #8b8b8b;
+    color: #323232;
 }
 
 .logo {
@@ -111,12 +113,16 @@ h5 {
 .card-13 > p {
     font-size: 17px;
     line-height: 1.5;
-    color: #8b8b8b;
+    color: #323232;
 }
 
 .icon-s {
     width: 85px;
     height: 85px;
+}
+
+.instructors > h3 {
+    padding: 25px 0;
 }
 
 .instructors > a {
@@ -163,7 +169,7 @@ p.self-description {
 .subscribe {
     display: flexbox;
     width: calc(100%/2);
-    background-color: #f3f4f6;
+    background-color: rgb(243, 244, 246);
     padding: 25px 15px 15px 15px;
     margin: 20px auto;
     border-radius: 8px;
@@ -229,7 +235,7 @@ li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    color: #949494;
+    color: #454545;
 }
 
 .bottom-stripes {
@@ -263,7 +269,7 @@ li a {
         font-weight: 500;
         line-height: 1.5;
         padding: 0 60px;
-        color: #8b8b8b;
+        color: #323232;
     }
 
     .card-13 {
@@ -420,7 +426,7 @@ li a {
         font-size: 1rem;
         line-height: 1.5;
         padding: 0 30px;
-        color: #8b8b8b;
+        color: #323232;
     }
 
     input {
@@ -506,6 +512,6 @@ li a {
         text-align: center;
         padding: 1px 3px;
         text-decoration: none;
-        color: #949494;
+        color: #323232;
     }
 }
