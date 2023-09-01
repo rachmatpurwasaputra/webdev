@@ -1,0 +1,206 @@
+body {
+    width: 1280px;
+    margin: 20px auto;
+    font-family: monospace;
+}
+
+body p {
+    font-size: 14px;
+}
+
+#body-content {
+    width: 100%;
+    height: calc(100vh - 48px);
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-auto-flow: column;
+}
+
+section {
+    overflow-y: auto;
+}
+
+#catalogue-container {
+    display: grid;
+    grid-template-columns: repeat(3, calc(100%/3));
+    grid-template-rows: repeat(2, 320px);
+    grid-auto-flow: row;
+    justify-items: center;
+    row-gap: 20px;
+    padding: 20px;
+}
+
+#my-cart {
+    padding: 12px;
+}
+
+.catalogue-card {
+    width: 90%;
+    display: flex;
+    flex-flow: column;
+    border-radius: 12px 12px 0 0;
+    border: 1px lightgray solid;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.catalogue-img {
+    height: 100px;
+    border: 1px grey solid;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgray;
+}
+
+.catalogue-img > img {
+    height: 100%;
+}
+
+
+.catalogue-detail {
+    height: 42px;
+    padding: 5px 15px;
+    overflow: hidden;
+}
+
+.catalogue-price {
+    height: 36px;
+    padding: 5px 15px;
+}
+
+.catalogue-detail > .item-title, .my-cart-item-name > .item-title {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.item-price {
+    margin-top: 8px;
+    margin-bottom: 5px;
+}
+
+.catalogue-qty-change-btn, .catalogue-add-item-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.catalogue-qty-change-btn > * {
+    height: 26px;
+    width: 30px;
+}
+
+.catalogue-qty-change-btn > input {
+    height: 20px;
+    width: 50px;
+    text-align: center;
+    border-radius: 6px;
+}
+
+.qty-change-btn {
+    background-color: blue;
+    color: white;
+    border-radius: 8px;
+}
+
+.catalogue-add-item-btn > button, #pay-btn > button {
+    background-color: #60aa17;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 8px;
+    border: 1px grey solid;
+}
+
+#iCashier-catalogue > h1 {
+    margin: 24px 12px;
+}
+
+#my-cart > #my-cart-h1 {
+    background-color: #60aa17;
+    border-radius: 12px 12px 0 0;
+    border-top: 1px black solid;
+    border-left: 1px black solid;
+    border-right: 1px black solid;
+    padding: 4px 12px;
+    text-align: center;
+}
+
+.my-cart-item-card {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-auto-flow: column;
+    padding: 4px 0;
+    border-bottom: 1px black solid;
+}
+
+.my-cart-detail {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-auto-flow: row;
+    align-items: center;
+    padding-left: 8px;
+}
+
+.my-cart-item-name {
+    grid-column: span 2;
+}
+
+.my-cart-item-name > p {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.my-cart-subtotal-item p {
+    padding-top: 4px;
+}
+
+.my-cart-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.my-cart-img > img {
+    height: 60px;
+}
+
+.my-cart-subtotal-item, #my-cart-final-pricing > #my-cart-final-pricing-value {
+    text-align: end;
+    font-weight: bold;
+}
+
+#my-cart-item-list {
+    border-left: 1px black solid;
+    border-right: 1px black solid;
+}
+
+#my-cart-item-list, #my-cart-final-pricing {
+    padding: 10px;
+}
+
+#my-cart-final-pricing {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-auto-flow: row;
+    border-left: 1px black solid;
+    border-right: 1px black solid;
+    border-bottom: 1px black solid;
+    border-radius: 0 0 12px 12px;
+}
+
+#pay-btn {
+    margin: 16px 0 4px 0;
+    grid-column: span 2;
+}
+
+#pay-now-btn {
+    display: block;
+    width: 100%;
+}
