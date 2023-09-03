@@ -1,7 +1,7 @@
 body {
     width: 1280px;
     margin: 20px auto;
-    font-family: monospace;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body p {
@@ -94,15 +94,23 @@ section {
     width: 30px;
 }
 
+.catalogue-qty-change-btn > div {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
 .catalogue-qty-change-btn > input {
     height: 20px;
     width: 50px;
     text-align: center;
-    border-radius: 6px;
+    border: none;
 }
 
 .qty-change-btn {
-    background-color: blue;
+    background-color: rgb(73, 73, 255);
     color: white;
     border-radius: 8px;
 }
@@ -113,6 +121,7 @@ section {
     padding: 8px 20px;
     border-radius: 8px;
     border: 1px grey solid;
+    cursor: pointer;
 }
 
 #iCashier-catalogue > h1 {
@@ -129,12 +138,23 @@ section {
     text-align: center;
 }
 
+#empty-card-text {
+    text-align: center;
+    padding-top: 20px;
+}
+
 .my-cart-item-card {
     display: grid;
     grid-template-columns: 20% 80%;
     grid-auto-flow: column;
     padding: 4px 0;
     border-bottom: 1px black solid;
+}
+
+.invoice-item-card {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-auto-flow: column;
 }
 
 .my-cart-detail {
@@ -171,7 +191,7 @@ section {
     height: 60px;
 }
 
-.my-cart-subtotal-item, #my-cart-final-pricing > #my-cart-final-pricing-value {
+.my-cart-subtotal-item, #my-cart-final-pricing > #my-cart-final-pricing-value, #invoice-final-pricing {
     text-align: end;
     font-weight: bold;
 }
@@ -195,6 +215,20 @@ section {
     border-radius: 0 0 12px 12px;
 }
 
+#invoice-final-pricing {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-auto-flow: row;
+    border-radius: 0 0 12px 12px;
+    padding: 0 8px;
+    /* justify-content: end; */
+}
+
+#invoice-final-pricing-name {
+    text-align: left;
+    font-weight: normal;
+}
+
 #pay-btn {
     margin: 16px 0 4px 0;
     grid-column: span 2;
@@ -204,3 +238,63 @@ section {
     display: block;
     width: 100%;
 }
+
+
+/**
+ * This code snippet below was being copied to this source code from:
+ *  
+ * https://www.freecodecamp.org/news/how-to-build-a-modal-with-javascript/
+ */
+ 
+.modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    width: 500px;
+    margin-top: 24px;
+    padding: 1.3rem;
+    position: absolute;
+    justify-self: center;
+    z-index: 2;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    font-family: monospace;
+  }
+  
+  .modal .flex {
+    justify-content: flex-end;
+    position: absolute;
+    right: 16px;
+    top: 16px;
+  }
+  
+  .modal p {
+    font-size: 0.9rem;
+    color: #777;
+    margin: 0.4rem 0 0.2rem;
+  }
+  
+  .btn-close {
+    padding: 0.5rem 0.7rem;
+    background: #eee;
+    border-radius: 50%;
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+    z-index: 1;
+  }
+  
+  .hidden {
+    display: none;
+  }
